@@ -74,8 +74,8 @@ async def iniciar_pelea(ctx, oponente: discord.Member):
     )
     await ctx.send(mensaje)
 
-@bot.command(name='puño')
-@bot.command(name='patada')
+@bot.command(name='puño', aliases=['patada'])
+
 async def ataque(ctx):
     canal_id = str(ctx.channel.id)
     jugador_actual_id = ctx.author.id
